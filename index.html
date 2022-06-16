@@ -1,29 +1,32 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <style>
-  ul, li {
+  ul,
+  li {
     padding: 0;
     list-style-type: none;
     text-align: center;
     font-family: monospace;
   }
 
-  #ask:hover li:hover{
+  #ask li:hover {
     background-color: red;
   }
-  #ask:hover li:hover ~ li {
+
+  #ask li:hover ~ li {
     background-color: red;
   }
 
   #bid:hover li {
     background-color: green;
   }
-  #bid:hover li:hover ~ li {
+
+  #bid li:hover ~ li {
     background-color: initial;
   }
-  </style>
+</style>
 <body>
-  <div style="width: 50%; margin: 0 auto;">
+  <div style="width: 50%; margin: 0 auto">
     <ul id="ask">
       <li>ASK 5</li>
       <li>ASK 4</li>
@@ -40,4 +43,3 @@
     </ul>
   </div>
 </body>
-
